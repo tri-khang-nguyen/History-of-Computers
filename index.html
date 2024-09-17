@@ -1,5 +1,183 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <tile>Steve Jobs</tile>
+  <title>Steve Jobs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: OCR A Std, monospace;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color:lightcyan;
+      opacity: 100%;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      background-color:;
+      opacity: 100%;
+    }
+
+    .topnav a:hover {
+      background-color: paleturquoise;
+      opacity: 100%;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: transparent;
+      color: black;
+    }
+
+    .topnav-left {
+        float: left;
+    }
+
+    .topnav-right {
+        float: right;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .topnav a:hover, .dropdown:hover .dropbtn {
+      background-color: paleturquoise;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 102px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 10px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: lightgray;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+  <style>
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: block;
+      color: black;
+      text-align: center;
+      background-color: lightcyan;
+    }
+    .navbar a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 10px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      background-color:transparent;
+    }
+  </style>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(''), url('white-blue-red-clouds-scenery-digital-art-painting-1v-2560x1700.jpg');
+      background-size: cover;
+      background-position:,;
+      background-repeat: no-repeat, no-repeat;
+    }
+  </style>
 </head>
-<h1>header</h1>
+<body>
+  <div class="topnav a">
+    <div class="topnav-right">
+    <a href="https://mystudentdashboard.com/#/workspace/w/65bd337cc485bd431ab45173">Communications Technology 10</i></font></a>
+    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Unit 1 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Moving and Removing Objects</a>
+          <a href="#">Inserting an Image into a Background</a>
+          <a href="#">Clone Stamp</a>
+        </div>
+      </div> 
+    <a href="Unit 2.html"><i class="fa fa-fw fa-book"></i> Unit 2</a>
+    <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i> Unit 3</a>
+    <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i> Unit 4</a>
+    <a href="Sky's Lab.html"><i class="fa fa -fw fa-flask"></i> Sky's Lab</a>
+    <a href="https://drive.google.com/drive/folders/1lgTeeOmx1cLcqriKpywbvVZSw8QP3-7E">Google Drive</i></font></a>
+    <a><div id="current-time"></div></a>
+    </div>
+    <div class="topnav a">
+        <div class="topnav-left">
+           <a href="https://unsplash.com/s/collections/night-cool-sky">Sky Arts <i class="fa fa -fw fa-cloud"></i></a>
+        </div>
+        </div>
+  </div>
+</body>
+  <body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <script>
+      function updateTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        hours = (hours < 10 ? "0" : "") + hours;
+        minutes = (minutes < 10 ? "0" : "") + minutes;
+        seconds = (seconds < 10 ? "0" : "") + seconds;
+
+        var timeString = hours + ":" + minutes + ":" + seconds;
+
+        document.getElementById("current-time").textContent = timeString;
+      }
+
+      setInterval(updateTime, 1000);
+    </script>
+  </head>
+  </body>
+</html>
