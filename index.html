@@ -6,14 +6,13 @@
   <style>
     .topnav {
       overflow: hidden;
-      background-color:lightcyan;
+      background-color:#181818;
       opacity: 100%;
     }
-
     .topnav a {
       float: left;
       display: block;
-      color: black;
+      color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -21,11 +20,9 @@
       background-color:;
       opacity: 100%;
     }
-
     .topnav a:hover {
-      background-color: paleturquoise;
       opacity: 100%;
-      color: black;
+      color:grey;
     }
 
     .topnav a.active {
@@ -57,7 +54,7 @@
     }
 
     .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: paleturquoise;
+      background-color: none;
     }
 
     .dropdown-content {
@@ -94,7 +91,7 @@
       display: block;
       color: black;
       text-align: center;
-      background-color: lightcyan;
+      background-color:#000000;
     }
     .navbar a {
       float: left;
@@ -102,7 +99,7 @@
       text-align: center;
       padding: 10px 16px;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 16px;
       background-color:transparent;
     }
   </style>
@@ -110,38 +107,94 @@
     body {
       margin: 0;
       padding: 0;
-      background-image:;
-      background-size:;
+      background-image: url('plain-black-and-white-apple-logo-nsm7ybbvnpghx707.jpg');
+      background-size: center;
+      opacity: 80%;
       background-position:,;
       background-repeat: , ;
-      "background-color:#404040;"
-      opacity:80%;
+      background-color: white;
     }
   </style>
-</head>
-<body>
-  <div class="topnav a">
-    <div class="topnav-right">
-    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-      <div class="dropdown">
-        <button class="dropbtn">Unit 1 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Moving and Removing Objects</a>
-          <a href="#">Inserting an Image into a Background</a>
-          <a href="#">Clone Stamp</a>
-        </div>
-      </div> 
-    <a href="Unit 2.html"><i class="fa fa-fw fa-book"></i> Unit </a>
-    <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i> Unit </a>
-    <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i> Unit </a>
-    </div>
+  <body>
     <div class="topnav a">
-        <div class="topnav-left">
+      <div class="topnav-right">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Unit 1 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Moving and Removing Objects</a>
+            <a href="#">Inserting an Image into a Background</a>
+            <a href="#">Clone Stamp</a>
+          </div>
+        </div> 
+      <a href="Unit 2.html"><i class="fa fa-fw fa-book"></i> Unit </a>
+      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i> Unit </a>
+      <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i> Unit </a>
+      </div>
+      
+          <div class="topnav-left">
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">Introduction</a>
+              <a href="#">About</a>
+              <a href="#">Sources</a>
+              <a href="#">.......</a>
+            </div>
+              <span style="padding: 12px; color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+    </div>
+  </body>
+  
+  <style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
 
-        </div>
-        </div>
-  </div>
-</body>
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 40px;
+  }
+    </style>
+</head>
+
+    
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
 </html>
