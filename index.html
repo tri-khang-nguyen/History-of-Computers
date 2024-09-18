@@ -6,7 +6,7 @@
   <style>
     .topnav {
       overflow: hidden;
-      background-color:#181818;
+      background-color: black;
       opacity: 100%;
     }
     .topnav a {
@@ -22,7 +22,7 @@
     }
     .topnav a:hover {
       opacity: 100%;
-      color:grey;
+      color:black;
     }
 
     .topnav a.active {
@@ -109,10 +109,9 @@
       padding: 0;
       background-image: url('https://images6.alphacoders.com/352/thumb-1920-352992.jpg');
       background-size: cover;
-      opacity: 80%;
+      opacity:;
       background-position:,;
       background-repeat: no-repeat;
-      background-color: white;
     }
   </style>
   <body>
@@ -120,29 +119,30 @@
       <div class="topnav-right">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
         <div class="dropdown">
-          <button class="dropbtn">Unit 1 
+          <button class="dropbtn">Introduction 
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Moving and Removing Objects</a>
-            <a href="#">Inserting an Image into a Background</a>
-            <a href="#">Clone Stamp</a>
+            <a href="Biography.html">Biography</a>
+            <a href="Quotes.html">Quotes</a>
+            <a href="Sources.html">Sources</a>
           </div>
         </div> 
-      <a href="Unit 2.html"><i class="fa fa-fw fa-book"></i> Unit </a>
-      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i> Unit </a>
-      <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i> Unit </a>
+      <a href="Moving and Removing objects.html"><i class="fa fa-fw fa-book"></i> Introduction </a>
+      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i>Quotes</a>
+      <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i></a>
       </div>
       
           <div class="topnav-left">
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="#">Introduction</a>
-              <a href="#">About</a>
-              <a href="#">Sources</a>
-              <a href="#">.......</a>
+              <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+              <a href="Introduction.html">Introduction</a>
+              <a href="Biography.html">Biography</a>
+              <a href="Sources.html">Sources</a>
+              <a href="........html">........</a>
             </div>
-              <span style="padding: 12px; color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              <span style="display: block; padding: 8px 12px; color:white;font-size:19px;cursor:pointer" onclick="openNav()">&#9776</span>
           </div>
     </div>
   </body>
@@ -162,25 +162,26 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    background-color: black;
   }
 
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.2s;
   }
 
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: red;
   }
 
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 5px;
+    right: 3px;
     font-size: 36px;
     margin-left: 40px;
   }
@@ -190,7 +191,7 @@
     
   <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "200px";
+    document.getElementById("mySidenav").style.width = "220px";
   }
 
   function closeNav() {
