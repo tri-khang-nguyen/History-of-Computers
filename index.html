@@ -22,7 +22,7 @@
     }
     .topnav a:hover {
       opacity: 100%;
-      color:black;
+      color:lightgrey;
     }
 
     .topnav a.active {
@@ -54,7 +54,7 @@
     }
 
     .topnav a:hover, .dropdown:hover .dropbtn {
-      background-color: none;
+      color: none;
     }
 
     .dropdown-content {
@@ -62,7 +62,7 @@
       position: absolute;
       background-color: white;
       min-width: 102px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
 
@@ -76,7 +76,7 @@
     }
 
     .dropdown-content a:hover {
-      background-color: lightgray;
+      background-color: black;
     }
 
     .dropdown:hover .dropdown-content {
@@ -91,7 +91,7 @@
       display: block;
       color: black;
       text-align: center;
-      background-color:#000000;
+      background-color: #000000;
     }
     .navbar a {
       float: left;
@@ -119,28 +119,24 @@
       <div class="topnav-right">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
         <div class="dropdown">
-          <button class="dropbtn" style="color: white;">Introduction 
-            <i class="fa fa-caret-down"></i>
+          <button class="dropbtn" style="color:white;"><a href="Introduction.html">Introduction</a> <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="Biography.html">Biography</a>
-            <a href="Quotes.html">Quotes</a>
-            <a href="Sources.html">Sources</a>
+            <a href="Biography"><i class="fa fa-fw fa-file"></i> Biography</a>
+            <a href="Quotes.html"><i class="fa fa-fw fa-cloud"></i> Quotes</a>
           </div>
         </div> 
-      <a href="Moving and Removing objects.html"><i class="fa fa-fw fa-book"></i> Introduction </a>
-      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i>Quotes</a>
-      <a href="Unit 4.html"><i class="fa fa-fw fa-file"></i></a>
+      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i>Sources</a>
       </div>
       
           <div class="topnav-left">
             <div id="mySidenav" class="sidenav">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+              <a href="index.html"> Home</a>
               <a href="Introduction.html">Introduction</a>
               <a href="Biography.html">Biography</a>
+              <a href="Quotes.html">Quotes</a>
               <a href="Sources.html">Sources</a>
-              <a href="........html">........</a>
             </div>
               <span style="display: block; padding: 8px 12px; color:white;font-size:19px;cursor:pointer" onclick="openNav()">&#9776</span>
           </div>
@@ -168,14 +164,14 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     display: block;
     transition: 0.2s;
   }
 
   .sidenav a:hover {
-    color: red;
+    color: gray;
   }
 
   .sidenav .closebtn {
@@ -191,7 +187,7 @@
     
   <script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "220px";
+    document.getElementById("mySidenav").style.width = "180px";
   }
 
   function closeNav() {
