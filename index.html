@@ -24,12 +24,19 @@
       opacity: 100%;
       color:lightgrey;
     }
-
+    
     .topnav a.active {
-      background-color: transparent;
-      color: black;
+      background-color: black;
+      color: white;
     }
-
+    .topnav-centered a {
+      float: none;
+      position: absolute;
+      font-color: white;
+      top: 2.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .topnav-left {
         float: left;
     }
@@ -56,7 +63,6 @@
     .topnav a:hover, .dropdown:hover .dropbtn {
       color: none;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -116,17 +122,20 @@
   </style>
   <body>
     <div class="topnav a">
+      <div class="topnav-centered a">
+        <a class="active">History of Computers</a>
+      </div>
       <div class="topnav-right">
       <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
         <div class="dropdown">
-          <button class="dropbtn" style="color:white;"><a href="Introduction.html">Introduction</a> <i class="fa fa-caret-down"></i>
+          <button class="dropbtn" style="color:white;">Information <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="Biography"><i class="fa fa-fw fa-file"></i> Biography</a>
+            <a href="Biography.html"><i class="fa fa-fw fa-file"></i> Biography</a>
             <a href="Quotes.html"><i class="fa fa-fw fa-cloud"></i> Quotes</a>
           </div>
         </div> 
-      <a href="Unit 3.html"><i class="fa fa-fw fa-bookmark"></i>Sources</a>
+      <a href="Sources.html"><i class="fa fa-fw fa-bookmark"></i>Sources</a>
       </div>
       
           <div class="topnav-left">
@@ -134,8 +143,6 @@
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <a href="index.html"> Home</a>
               <a href="Introduction.html">Introduction</a>
-              <a href="Biography.html">Biography</a>
-              <a href="Quotes.html">Quotes</a>
               <a href="Sources.html">Sources</a>
             </div>
               <span style="display: block; padding: 8px 12px; color:white;font-size:19px;cursor:pointer" onclick="openNav()">&#9776</span>
